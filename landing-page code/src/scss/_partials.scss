@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$brand-color: rgb(226, 35, 26);
+$text-white: white;
+$text-dark: rgb(51, 51, 51);
+$font-arial: Arial, Helvetica, sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$blue: rgb(33, 157, 173);
+
+
+//sizes
+
+$m-p-10: 10px;
+$m-p-20: 20px;
+$m-p-50: 50px;
+$block-height: 700px;
+
+$sm-font: 19px;
+$huge-font: 60px;
+$line-height: 1.5;
+
+//mixins
+
+@mixin link {
+    text-decoration: none;
+    color: $text-dark;
+}
+
+@mixin symbols {
+    font-size: 0.3em;
+    vertical-align: text-top;
+    
+}
+
+@mixin flexed-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin custom-h2 {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: lighter;
+}
+
+@mixin recipe {
+    position: relative;
+    background: url('../../../Images/Fond.png') no-repeat;
+    height: 90%;
+    width: 45%;
+    margin-left: $m-p-20;
+}
+
+@mixin description-text {
+    font-size: 3rem;
+}
+
+@mixin changable-btn {
+    margin-left: $m-p-20;
+    font-size: 25px;
+    text-align: center;
+    padding: $m-p-20;
+    border: none;
+    border-color: $blue;
+    border-radius: 50%;
+}
